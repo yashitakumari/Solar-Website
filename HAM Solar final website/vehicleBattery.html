@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vehicle Battery Products</title>
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #f0f4f8, #e3f2fd);
+      color: #333;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    header {
+      text-align: center;
+      padding: 1rem 1rem;
+      background: linear-gradient(to right, #ffa726, #fb8c00);
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      width: 200%;
+      height: 100%;
+      top: 0;
+      left: -100%;
+      background: rgba(255, 255, 255, 0.2);
+      animation: wave 5s infinite linear;
+      transform: skewX(-30deg);
+    }
+
+    @keyframes wave {
+      from { left: -100%; }
+      to { left: 100%; }
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 0 auto;
+      color: #2c2c2c;
+      text-align: justify;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 2rem;
+    }
+
+    .card {
+                  background: #fff;
+                  border-radius: 12px;
+                  overflow: hidden;
+                  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+                  transition: all 0.3s ease-in-out;
+                  border-top: 5px solid #f9a825;
+                  position: relative;
+                }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+      filter: brightness(0.95);
+    }
+
+    .card img:hover {
+      transform: scale(1.05);
+    }
+
+    .card-content {
+      padding: 1rem;
+    }
+
+    .card-content p {
+      font-size: 1rem;
+      color: #333;
+      line-height: 1.6;
+      margin-bottom: 3px;
+      text-align: justify;
+    }
+
+    .card-content h2{
+      font-size: 1.5rem;
+      margin-bottom: 2px;
+      color: #ff6f00 ;
+    }       
+
+    
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      header p {
+        font-size: 1rem;
+        text-align: justify;
+      }
+
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Vehicle Battery Products</h1>
+    <p><strong>Power up your ride with HAM Solar Power!</strong><br>
+      Power your ride with confidence. Our EV batteries combine advanced lithium technology with cutting-edge performance to give you reliable, long-lasting energy on the go. Whether it's your daily commute or commercial travel, these batteries deliver consistent power, minimal maintenance, and exceptional durability—keeping you charged across every road and terrain, the smart and sustainable way.
+      </p>
+  </header>
+
+  <!-- Product Cards -->
+  <div class="grid-container">
+    <div class="card">
+      <img src="assets/img/48V E-scooty battery.jpeg" alt="Battery 1">
+      <div class="card-content">
+        <h2>48V E-Scooty Batteries</h2>
+                  <p><strong>Description:</strong> Power your electric scooty with reliable 48V lithium batteries. Ideal for daily commuting and city rides.</p>
+                   <strong>Available Models:</strong>  
+              <ul>
+                <li>48V 24AH</li>
+                <li>48V 29AH</li>
+              </ul>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img src="assets/img/60V E-scooty battery.jpeg" alt="Battery 3">
+      <div class="card-content">
+        <h2>60V E-Scooty Batteries</h2>
+                  <p><strong>Description:</strong> Designed for medium-sized installations with better efficiency and deeper discharge cycles.</p>
+                   <strong>Available Model:</strong>  
+              <ul>
+                <li>60V 24AH</li>
+                <li>60V 29AH</li>
+              </ul>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1603575448372-35a85f36dd0a" alt="Battery 4">
+      <div class="card-content">
+        <h2>E-Rickshaw Battery</h2>
+                  <p><strong>Description:</strong> Heavy-duty 51.2V battery built for e-rickshaws. Long backup and durability for commercial use.</p>
+                   <strong>Available Model:</strong>  
+              <ul>
+                <li>51.2V 100AH</li>
+              </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

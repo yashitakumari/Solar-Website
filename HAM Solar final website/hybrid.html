@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hybrid Solar System</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f4f8fc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 30px 20px;
+      gap: 30px;
+    }
+
+    .left, .right {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .left h2, .left h3 {
+      color: #044891;
+      margin-bottom: 10px;
+    }
+
+    .left p {
+      margin-bottom: 10px;
+      text-align: justify;
+    }
+
+    .left ul {
+      padding-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    .left li {
+      margin-bottom: 6px;
+    }
+
+    .component-section {
+      margin-bottom: 20px;
+    }
+
+    .form-box {
+      background: #fff;
+      padding: 25px 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .form-box h2 {
+      margin-bottom: 10px;
+      color: #044891;
+    }
+
+    .form-box p {
+      margin-bottom: 15px;
+      text-align: center;
+      text-align: justify;
+    }
+
+    .tab-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      overflow: hidden;
+    }
+
+    .tab-buttons button {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      background: #f0f0f0;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .tab-buttons button.active {
+      background: #007BFF;
+      color: white;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .bill-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin: 10px 0 20px;
+    }
+
+    .bill-options button {
+      padding: 8px 14px;
+      border: 1px solid #007BFF;
+      border-radius: 20px;
+      background: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .bill-options button.active {
+      background: #007BFF;
+      color: white;
+    }
+
+    label {
+      display: block;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      background: #007BFF;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="assets/img/solar1.avif" alt="Hybrid Solar System" />
+</header>
+
+<div class="container">
+  <div class="left">
+    <h2>Overview of a Hybrid Solar System</h2>
+    <p>A hybrid solar system combines the features of both on-grid and off-grid systems. It generates solar power, uses it during the day, stores the excess in batteries, and exports any surplus to the grid. It also draws from the grid when solar and battery power are insufficient.</p>
+
+    <div class="component-section">
+      <h3>1. Solar Panels</h3>
+      <p>Capture sunlight and convert it into DC electricity. They are the primary source of power during the daytime.</p>
+    </div>
+
+    <div class="component-section">
+      <h3>2. Hybrid Inverter</h3>
+      <p>This intelligent device converts DC to AC and manages energy between the grid, batteries, and solar panels. It allows seamless switching between sources and supports net metering.</p>
+    </div>
+
+    <div class="component-section">
+      <h3>3. Battery Bank</h3>
+      <p>Stores surplus solar energy for use during night or power cuts. Hybrid systems generally use lithium-ion batteries due to efficiency and longevity.</p>
+    </div>
+
+    <div class="component-section">
+      <h3>4. Grid Connection</h3>
+      <p>Hybrid systems are connected to the grid. Extra energy goes back to the grid and can earn you credits. If battery and solar are not enough, the grid supplies backup power.</p>
+    </div>
+
+    <div class="component-section">
+      <h3>5. Load Management System</h3>
+      <p>Optional feature to prioritize critical loads like fans, lights, routers during backup mode.</p>
+    </div>
+
+    <h3>Benefits of Hybrid Solar System</h3>
+    <ul>
+      <li>24/7 power supply with battery backup</li>
+      <li>Lower electricity bills through net metering</li>
+      <li>Independence during grid failures or outages</li>
+      <li>Smart energy management and flexibility</li>
+    </ul>
+
+    <h3>Conclusion</h3>
+    <p>Hybrid solar systems offer the best of both worlds—grid savings and energy independence. They are ideal for homes or businesses that need backup power but also want to reduce energy costs. Though the initial cost is higher than on-grid systems, the long-term benefits and flexibility make them worth the investment.</p>
+
+    <h2>FAQs</h2>
+    <div class="component-section">
+      <p><b>Q: What is a hybrid solar system?</b><br>It is a solar setup connected to the grid and also has battery storage for backup.</p>
+
+      <p><b>Q: Will I have power during a power cut?</b><br>Yes, your batteries provide power even when the grid is down.</p>
+
+      <p><b>Q: How is it different from on-grid systems?</b><br>Unlike on-grid systems, hybrid systems work even during power outages because of the battery bank.</p>
+
+      <p><b>Q: Can I use net metering with hybrid systems?</b><br>Yes, hybrid systems support net metering. You can earn credits for the extra solar energy exported to the grid.</p>
+
+      <p><b>Q: Are hybrid systems expensive?</b><br>They cost more upfront due to batteries but offer backup, flexibility, and long-term savings.</p>
+
+      <p><b>Q: Can I expand the system later?</b><br>Yes, you can upgrade by adding more solar panels or batteries as your power needs grow.</p>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="form-box">
+      <h2>Book a FREE Solar Consultation</h2>
+      <p>And save up to ₹78,000 with subsidy</p>
+      <div class="tab-buttons">
+        <button onclick="selectType(this)">Commercial</button>
+        <button onclick="selectType(this)">Industrial</button>
+        <button onclick="selectType(this)">Ground Mount</button>
+      </div>
+      <form>
+        <input type="text" placeholder="Full Name *" required />
+        <input type="text" placeholder="WhatsApp number *" required />
+        <input type="text" placeholder="Pin code *" required />
+
+        <p><b>What is your average monthly bill?</b></p>
+        <div class="bill-options">
+          <button onclick="selectBill(this)">Less than 500</button>
+          <button onclick="selectBill(this)">500-1000</button>
+          <button onclick="selectBill(this)">1000-2000</button>
+          <button onclick="selectBill(this)">2000-5000</button>
+          <button onclick="selectBill(this)">More than 5000</button>
+        </div>
+
+        <label><input type="checkbox" /> I agree to terms of service & privacy policy</label>
+        <button type="submit" class="submit-btn">Submit Details</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  function selectType(btn) {
+    document.querySelectorAll('.tab-buttons button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  }
+
+  function selectBill(btn) {
+    event.preventDefault();
+    document.querySelectorAll('.bill-options button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  }
+</script>
+
+</body>
+</html>

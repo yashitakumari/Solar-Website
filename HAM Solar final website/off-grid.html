@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Off-Grid Solar System</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f4f8fc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 30px 20px;
+      gap: 30px;
+    }
+
+    .left, .right {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .left h2, .left h3 {
+      color: #044891;
+      margin-bottom: 10px;
+    }
+
+    .left p {
+      margin-bottom: 10px;
+      text-align: justify;
+    }
+
+    .left ul {
+      padding-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    .left li {
+      margin-bottom: 6px;
+    }
+
+    .component-section {
+      margin-bottom: 20px;
+    }
+
+    .form-box {
+      background: #fff;
+      padding: 25px 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .form-box h2 {
+      margin-bottom: 10px;
+      color: #044891;
+    }
+
+    .form-box p {
+      margin-bottom: 15px;
+      text-align: center;
+      text-align: justify;
+    }
+
+    .tab-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      overflow: hidden;
+    }
+
+    .tab-buttons button {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      background: #f0f0f0;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .tab-buttons button.active {
+      background: #007BFF;
+      color: white;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .bill-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin: 10px 0 20px;
+    }
+
+    .bill-options button {
+      padding: 8px 14px;
+      border: 1px solid #007BFF;
+      border-radius: 20px;
+      background: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .bill-options button.active {
+      background: #007BFF;
+      color: white;
+    }
+
+    label {
+      display: block;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      background: #007BFF;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="assets/img/solar1.avif" alt="Top Image">
+  </header>
+
+  <div class="container">
+    <div class="left">
+      <h2>Overview of an Off-Grid Solar System</h2>
+      <p>An off-grid solar system is a stand-alone power solution not connected to the electricity grid. It uses solar panels, batteries, charge controllers, and inverters to provide power independently. This setup is ideal for remote areas or those seeking energy independence.</p>
+
+      <div class="component-section">
+        <h3>1. Solar Panels (Modules)</h3>
+        <p>Solar panels absorb sunlight and convert it into DC electricity. Two main types include:</p>
+        <ul>
+          <li>Monocrystalline – high efficiency, sleek design</li>
+          <li>Polycrystalline – more affordable, slightly lower efficiency</li>
+        </ul>
+        <p>Panels should be placed in direct sunlight for maximum power generation.</p>
+      </div>
+
+      <div class="component-section">
+        <h3>2. Mounting Structures</h3>
+        <p>These structures hold solar panels at the right angle to absorb maximum sunlight. They must be sturdy and weather-resistant.</p>
+      </div>
+
+      <div class="component-section">
+        <h3>3. Batteries</h3>
+        <p>Batteries store energy generated during the day to be used at night. Common types:</p>
+        <ul>
+          <li>Lead-Acid – cheaper, needs maintenance</li>
+          <li>Lithium-Ion – longer lifespan, no maintenance</li>
+        </ul>
+      </div>
+
+      <div class="component-section">
+        <h3>4. Solar Charge Controller</h3>
+        <p>It regulates power flow from panels to batteries, preventing overcharging. Two types are PWM and MPPT (more efficient).</p>
+      </div>
+
+      <div class="component-section">
+        <h3>5. Solar Inverter</h3>
+        <p>Converts DC electricity into AC to power household appliances. Modern inverters also manage batteries and protect from overloads.</p>
+      </div>
+
+      <div class="component-section">
+        <h3>6. Solar Accessories</h3>
+        <p>Important accessories include:</p>
+        <ul>
+          <li>MC4 connectors</li>
+          <li>DC/AC combiner boxes</li>
+          <li>Earthing materials</li>
+          <li>Lightning arresters</li>
+        </ul>
+      </div>
+
+      <h3>Conclusion</h3>
+      <p>An off-grid solar system is a powerful and reliable solution for areas with limited or no access to the electricity grid. It gives complete energy independence by using solar panels, batteries, and inverters to generate and store electricity. Although the initial investment may be higher due to battery costs, the long-term savings and benefits—such as zero electricity bills, clean energy use, and freedom from power cuts—make it a smart and sustainable choice. Whether you're living in a remote location or simply want full control over your power usage, off-grid solar is a dependable and eco-friendly solution.</p>
+
+      <h2>FAQs</h2>
+      <div class="component-section">
+        <p><b>Q: What is an off-grid solar system?</b><br>An off-grid solar system works without being connected to the main grid. It stores solar power in batteries to use any time.</p>
+
+        <p><b>Q: How does it work?</b><br>Solar panels produce DC power → Charge controller regulates it → Batteries store it → Inverter converts to AC → Appliances use it.</p>
+
+        <p><b>Q: What happens at night?</b><br>Batteries supply the stored power collected during the day.</p>
+
+        <p><b>Q: Can it power a full house?</b><br>Yes, with proper sizing of the solar system and battery backup.</p>
+
+        <p><b>Q: How do I maintain an off-grid system?</b><br>Regular cleaning of solar panels and checking battery water levels (if lead-acid type) is usually enough. Modern systems require minimal maintenance.</p>
+
+        <p><b>Q: Can I upgrade my system in the future?</b><br>Yes, you can increase the number of panels or batteries if your energy needs grow.</p>
+
+        <p><b>Q: What happens during cloudy or rainy days?</b><br>Batteries store extra energy from sunny days to be used when sunlight is low. Proper system design ensures backup during such times.</p>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="form-box">
+        <h2>Book a FREE Solar Consultation</h2>
+        <p>And save up to ₹78,000 with subsidy</p>
+        <div class="tab-buttons">
+          <button onclick="selectType(this)">Commercial</button>
+          <button onclick="selectType(this)">Industrial</button>
+          <button onclick="selectType(this)">Ground Mount</button>
+        </div>
+        <form>
+          <input type="text" placeholder="Full Name *" required>
+          <input type="text" placeholder="WhatsApp number *" required>
+          <input type="text" placeholder="Pin code *" required>
+
+          <p><b>What is your average monthly bill?</b></p>
+          <div class="bill-options">
+            <button onclick="selectBill(this)">Less than 500</button>
+            <button onclick="selectBill(this)">500-1000</button>
+            <button onclick="selectBill(this)">1000-2000</button>
+            <button onclick="selectBill(this)">2000-5000</button>
+            <button onclick="selectBill(this)">More than 5000</button>
+          </div>
+
+          <label><input type="checkbox" > I agree to terms of service & privacy policy</label>
+          <button type="submit" class="submit-btn">Submit Details</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function selectType(btn) {
+      document.querySelectorAll('.tab-buttons button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+
+    function selectBill(btn) {
+      event.preventDefault();
+      document.querySelectorAll('.bill-options button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+  </script>
+</body>
+</html>

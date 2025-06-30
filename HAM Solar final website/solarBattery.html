@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Solar Battery Products</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+                  font-family: 'Roboto', sans-serif;
+                  margin: 0;
+                  padding: 0;
+                  background: linear-gradient(to bottom, #f0f4f8, #e3f2fd);
+                  color: #333;
+                  animation: fadeIn 1s ease-in;
+                }
+
+                @keyframes fadeIn {
+                  from { opacity: 0; }
+                  to { opacity: 1; }
+                }
+
+                header {
+                  text-align: center;
+                  padding: 2rem 1rem;
+                  background: linear-gradient(to right, #ffb300, #ff6f00);
+                  color: #1a1a1a;
+                  position: relative;
+                  overflow: hidden;
+                  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+                }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    header h1 {
+                  font-size: 2.8rem;
+                  margin-bottom: 1rem;
+                  color: #ffff;
+                }
+                
+                header p {
+                  font-size: 1.1rem;
+                  max-width: 800px;
+                  margin: 0 auto;
+                  color: #2c2c2c;
+                  text-align: justify;
+                }
+
+                .grid-container {
+                  display: grid;
+                  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                  gap: 20px;
+                  padding: 2rem;
+                }
+                
+                .card {
+                  background: #ffff;
+                  border-radius: 12px;
+                  overflow: hidden;
+                  box-shadow: 0 4px 20px rgba(255, 193, 7, 0.2);
+                  transition: all 0.3s ease-in-out;
+                  border-top: 5px solid #ffc107;
+                  position: relative;
+                }
+                
+                .card:hover {
+                  transform: translateY(-6px);
+                  box-shadow: 0 12px 30px rgba(255, 193, 7, 0.3);
+                }
+                
+                .card img {
+                  width: 100%;
+                  height: 200px;
+                  object-fit: cover;
+                  transition: transform 0.3s ease;
+                  filter: brightness(0.95);
+
+                }
+                
+                .card img:hover {
+                  transform: scale(1.04);
+                }
+                
+
+    .card-content {
+      padding: 1rem;
+    }
+
+    .card-content ul {
+                  list-style-type: disc;
+                  padding-left: 20px;
+                  color: #333;
+                }
+            
+                .card-content ul li {
+                  margin-bottom: 8px;
+                }
+
+    .card-content p {
+                  font-size: 1rem;
+                  line-height: 1.6;
+                  color: #333;
+                  margin-bottom: 3px;
+                  text-align: justify;
+                }
+                .card-content h2{
+                  font-size: 1.5rem;
+                  margin-bottom: 2px;
+                  color: #ff6f00 ;
+                }       
+                .card-content h3{
+                  font-size: 1.2rem;
+                  margin-bottom: 2px;
+                }
+                
+                
+                @media (max-width: 768px) {
+                  header h1 {
+                    font-size: 2rem;
+                  }
+                
+                  header p {
+                    font-size: 1rem;
+                    text-align: justify;
+                  }
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Solar Battery Products</h1>
+    <p>
+                  <strong> The Sun with HAM Solar Power!</strong><br>
+                  Why let the sunshine go to waste? Our advanced solar batteries capture and store clean energy, so you stay powered up day and night—rain or shine. Whether you're running your home, office, or a full setup, these batteries are quick to charge, built to last, and ready to work when the grid can't.
+                  <br>No noise, no stress—just smooth, reliable energy that moves with you. Make every ray of sunlight count and enjoy smart, silent power that never sleeps!
+    </p>
+  </header>
+
+  <div class="grid-container">
+    <div class="card">
+      <img src="assets/img/12.8V Battery.png" alt="Battery 1">
+      <div class="card-content">
+        <h2>12.8V Inverter Batteries</h2>
+        <p><strong>Description:</strong> Ideal for small home solar setups and backup systems. Lightweight and compact, perfect for basic energy storage.</p>
+         <strong>Sub-Categories:</strong>  
+    <ul>
+      <li>12.8V 100Ah</li>
+      <li>12.8V 150Ah</li>
+      <li>12.8V 200Ah</li>
+    </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/img/25.6 V battery.jpeg" alt="Battery 2">
+      <div class="card-content">
+                  <h2>25.6V Lithium Batteries</h2>
+                  <p><strong>Description:</strong> Designed for medium-sized installations with better efficiency and deeper discharge cycles.</p>
+                   <strong>Sub-Categories:</strong>  
+              <ul>
+                <li>25.6V 100Ah</li>
+                <li>25.6V 150Ah</li>
+                <li>25.6V 200Ah</li>
+              </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1603575448372-35a85f36dd0a" alt="Battery 3">
+      <div class="card-content">
+                  <h2>48V Energy Storage Batteries</h2>
+                  <p><strong>Description:</strong> Commonly used in both residential and commercial off-grid or hybrid solar systems.</p>
+                   <strong>Sub-Categories:</strong>  
+              <ul>
+                <li>48V 100Ah</li>
+                <li>48V 100Ah with Communication Ports</li>
+              </ul>
+      </div>
+    </div>
+
+    <div class="card">
+                  <div style="display: flex; justify-content: center; align-items: center;">
+                                    <img src="assets/img/51.2 V battery.jpeg" alt="Battery 4" style="width: 55%; height: 250px; object-fit: cover; border-radius: 1px;">
+                                  </div>                                  
+      <div class="card-content">
+                  <h2>51.2V High Performance Batteries</h2>
+                  <p><strong>Description:</strong> Offers high efficiency and compatibility with modern solar inverters. Supports smart communication features.</p>
+                   <strong>Sub-Categories:</strong>  
+              <ul>
+                <li>51.2V 100Ah</li>
+                <li>51.2V 100Ah with Communication Ports</li>
+              </ul>
+      </div>
+    </div>
+
+    <div class="card">
+                  <img src="https://images.unsplash.com/photo-1571607388489-986b715ad15c" alt="Battery 4">
+                  <div class="card-content">
+                              <h2>96V Power Batteries</h2>
+                              <p><strong>Description:</strong> Built for industrial and high-load solar setups. Delivers consistent power for longer periods.</p>
+                               <strong>Sub-Categories:</strong>  
+                          <ul>
+                            <li>96V 100Ah</li>
+                          </ul>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="https://images.unsplash.com/photo-1571607388489-986b715ad15c" alt="Battery 4">
+                  <div class="card-content">
+                              <h2>120V Batteries</h2>
+                              <p><strong>Description:</strong> Suitable for large-scale operations requiring extended runtime and maximum energy output.</p>
+                               <strong>Sub-Categories:</strong>  
+                          <ul>
+                            <li> 120V 100Ah</li>
+                          </ul>
+                  </div>
+                </div>
+    
+    <!-- Add more cards if needed -->
+  </div>
+
+  
+  
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
